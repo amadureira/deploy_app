@@ -1,0 +1,17 @@
+- name: Install Tomcat
+  yum:
+    name: "{{ tomcat_custom_pkg | default(tomcat_pkg)}}"
+    state: present
+
+- name: Start Tomcat Service
+  service:
+   name: tomcat 
+   state: started
+  when: disable_tomcat  is undefined
+
+- name: Config tomcat environment
+  template: 
+   src:  '{{gittfsroles}}/pkgs/tomcat/templates/tomcat.conf'
+   dest: /etc/tomcat/tomcat.conf
+  notify:
+   - Restart Tomcat 

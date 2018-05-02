@@ -1,0 +1,6 @@
+- name : Install monit pkg
+  yum: name={{ custom_monit_pkg | default(monit_pkg) }} state=present
+
+- name: Start monit service
+  service: name=monit state=started enabled=yes
+  when: disable_monit is undefined

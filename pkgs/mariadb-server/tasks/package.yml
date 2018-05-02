@@ -1,0 +1,4 @@
+- name: Install MariaDb Server
+  yum:
+   name: "{{custon_mariadb_server_pkg| default(mariadb_server_pkg)}}"
+   state: present

@@ -1,0 +1,5 @@
+- name: Install Mariadb Client
+  yum: 
+   name: "{{ custon_mariadb_client_pkg| default(mariadb_client_pkg)}}" 
+   state: present
+    

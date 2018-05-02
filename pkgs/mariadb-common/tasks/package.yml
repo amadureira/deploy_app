@@ -1,0 +1,4 @@
+- name: Install Mariadb Common
+  yum:
+   name: "{{custon_mariadb_common_pkg | default(mariadb_custon_pkg)}}"
+   state: present

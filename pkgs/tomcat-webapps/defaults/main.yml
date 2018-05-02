@@ -1,0 +1,7 @@
+tomcat_pkg: tomcat-7.0.69-12.el7_3.noarch
+tomcat_base: /var/lib/tomcats/
+tomcat_java_home: /usr/lib/jvm/jre
+tomcat_catalina_home:   /usr/share/tomcat
+tomcat_catalina_tmpdir: /var/cache/tomcat/temp
+tomcat_cfg_loaded: 1
+tomcat_security_manager: false
