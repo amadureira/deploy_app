@@ -1,0 +1,4 @@
+- name: Install Nginx
+  yum: 
+   name: "{{nginx_package_name}}"
+   state: "{{nginx_package_state}}"

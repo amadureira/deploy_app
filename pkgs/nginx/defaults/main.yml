@@ -1,0 +1,6 @@
+nginx_package_name: nginx
+nginx_package_state: installed
+nginx_service_name: nginx
+nginx_service_state: started
+nginx_service_enable: yes
+

@@ -1,0 +1,5 @@
+- name: Start nginx Service
+  service: 
+   name: "{{nginx_service_name}}"
+   state: "{{nginx_service_state}}"
+   enabled: "{{nginx_service_enable}}"
