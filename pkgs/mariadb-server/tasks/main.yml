@@ -1,1 +1,2 @@
 - include: package.yml
+- include: service.yml

@@ -1,4 +1,4 @@
-tomcat_pkg: tomcat-7.0.69-12.el7_3.noarch
+tomcat_pkg: tomcat-7.0.76-3.el7_4
 tomcat_base: /var/lib/tomcats/
 tomcat_java_home: /usr/lib/jvm/jre
 tomcat_catalina_home:   /usr/share/tomcat

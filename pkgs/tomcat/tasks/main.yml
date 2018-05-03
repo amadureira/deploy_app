@@ -11,7 +11,7 @@
 
 - name: Config tomcat environment
   template: 
-   src:  '{{gittfsroles}}/pkgs/tomcat/templates/tomcat.conf'
+   src:  pkgs/tomcat/templates/tomcat.conf'
    dest: /etc/tomcat/tomcat.conf
   notify:
    - Restart Tomcat 
