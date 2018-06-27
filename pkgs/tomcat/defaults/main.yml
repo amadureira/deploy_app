@@ -1,7 +1,20 @@
-tomcat_pkg: tomcat-7.0.76-3.el7_4
-tomcat_base: /var/lib/tomcats/
-tomcat_java_home: /usr/lib/jvm/jre
-tomcat_catalina_home:   /usr/share/tomcat
-tomcat_catalina_tmpdir: /var/cache/tomcat/temp
-tomcat_cfg_loaded: 1
-tomcat_security_manager: false
+tomcat_package_name: tomcat-7.0.76-6.el7
+tomcat_package_state: "present"
+tomcat_package_update_cache: "yes"
+tomcat_package_allow_downgrade: "no"
+tomcat_service_name: "tomcat"
+tomcat_service_state: "started"
+tomcat_service_enabled: "yes"
+
+tomcat_template_config_src: "pkgs/tomcat/templates/tomcat.conf"
+tomcat_template_config_dest: "/etc/tomcat/tomcat.conf"
+tomcat_template_config_owner: "root"
+tomcat_template_config_group: "tomcat"
+tomcat_template_config_mode: "0644"
+
+tomcat_template_base: /var/lib/tomcats/
+tomcat_template_java_home: /usr/lib/jvm/jre
+tomcat_template_catalina_home:   /usr/share/tomcat
+tomcat_template_catalina_tmpdir: /var/cache/tomcat/temp
+tomcat_template_cfg_loaded: 1
+tomcat_template_security_manager: false

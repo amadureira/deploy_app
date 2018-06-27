@@ -1,0 +1,6 @@
+- name: Install Tomcat
+  yum:
+    name: "{{ custom_tomcat_package_name | default(tomcat_package_name)}}"
+    state: "{{tomcat_package_state}}"
+    update_cache: "{{tomcat_package_update_cache}}"
+    allow_downgrade: "{{tomcat_package_allow_downgrade}}"

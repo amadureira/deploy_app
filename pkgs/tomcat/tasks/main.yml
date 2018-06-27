@@ -1,17 +1,3 @@
-- name: Install Tomcat
-  yum:
-    name: "{{ tomcat_custom_pkg | default(tomcat_pkg)}}"
-    state: present
-
-- name: Start Tomcat Service
-  service:
-   name: tomcat 
-   state: started
-  when: disable_tomcat  is undefined
-
-- name: Config tomcat environment
-  template: 
-   src:  pkgs/tomcat/templates/tomcat.conf'
-   dest: /etc/tomcat/tomcat.conf
-  notify:
-   - Restart Tomcat 
+- include_tasks: package.yml
+- include_tasks: config.yml
+- include_tasks: service.yml

@@ -1,2 +1,2 @@
-- include: package.yml
-- include: service.yml
+- include_tasks: package.yml
+- include_tasks: service.yml

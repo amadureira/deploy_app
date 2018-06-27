@@ -1,0 +1,6 @@
+- name: Start tomcat service
+  service: 
+   name: "{{tomcat_service_name}}"
+   state: "{{tomcat_service_state}}"
+   enabled: "{{tomcat_service_enabled}}"
+
