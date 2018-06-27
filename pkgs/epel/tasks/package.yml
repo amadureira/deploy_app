@@ -1,0 +1,6 @@
+- name: Install epel package
+  yum: 
+    name: "{{custon_epel_package_name | default(epel_package_name[ansible_distribution_major_version])}}"
+    state: "{{epel_package_state}}"
+    update_cache: "{{epel_package_update_cache}}"
+#   allow_downgrade: "{{epel_package_allow_downgrade}}"

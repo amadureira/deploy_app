@@ -1,0 +1,3 @@
+---
+# tasks file for pkgs/epel
+- include_tasks: package.yml

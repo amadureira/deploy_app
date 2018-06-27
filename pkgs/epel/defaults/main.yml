@@ -1,0 +1,6 @@
+---
+# defaults file for pkgs/epel
+epel_package_name: {"6":"","7":"epel-release-7-11"}
+epel_package_state: "installed"
+epel_package_update_cache: "yes"
+epel_package_allow_downgrade: "no"
